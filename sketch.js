@@ -32,6 +32,8 @@ var car4img;
 //car5
 var car5img;
 
+var touches
+
 //car6
 var car6img;
 
