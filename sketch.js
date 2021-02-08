@@ -196,14 +196,16 @@ function draw() {
 }
 
   // right arrow
-   if(keyDown("RIGHT_ARROW")) {    
-    bike.velocityX = 10;
-    }
+  // if(keyDown("RIGHT_ARROW")) {    
+   // bike.velocityX = 10;
+   // }
  
   //left arrow
-  if(keyDown("LEFT_ARROW")) {
-    bike.velocityX = -10;
-  }
+ // if(keyDown("LEFT_ARROW")) {
+  //  bike.velocityX = -10;
+  //}
+    
+    bike.x = World.mouseX;
 
       
   if (bike.x<120 || bike.x>580 || CarsGroup.isTouching(bike) || bike.isTouching(StoneGroup)){     
@@ -233,9 +235,10 @@ else if (gameState==END){
         
 }
 
-if(mousePressedOver(RESTART) && gameState === END) {
+if(touches.length>0 || mousePressedOver(RESTART) && gameState === END) {
         gameState = PLAY;
         reset();
+  touches[];
 }
 
       
