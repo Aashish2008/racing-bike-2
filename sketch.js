@@ -240,7 +240,7 @@ else if (gameState==END){
 if(touches.length>0 || mousePressedOver(RESTART) && gameState === END) {
         gameState = PLAY;
         reset();
-  touches[];
+  touches = []
 }
 
       
